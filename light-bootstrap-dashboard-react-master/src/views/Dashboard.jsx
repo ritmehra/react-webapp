@@ -63,7 +63,7 @@ class Dashboard extends Component {
     let sParam = severityParam;
     if(sParam == undefined)
        sParam = '';
-    fetch("http://messaging-loadbalancer-2023474556.us-west-2.elb.amazonaws.com:8080/messages?deviceName="+dParam+"&severity="+sParam, {
+    fetch("http://52.42.194.161:8080/messages?deviceName="+dParam+"&severity="+sParam, {
 	       headers:{
 			   authorization: this.state.accessToken
            }			   
@@ -94,7 +94,7 @@ class Dashboard extends Component {
     let deviceName = deviceParam;
     if(deviceName==undefined)
        deviceName=''
-    fetch("http://messaging-loadbalancer-2023474556.us-west-2.elb.amazonaws.com:8080/device/stats?deviceName="+deviceName,{
+    fetch("http://52.42.194.161:8080/device/stats?deviceName="+deviceName,{
 	       headers:{
 			   authorization: this.state.accessToken
            }			   
@@ -155,7 +155,7 @@ class Dashboard extends Component {
     if(sParam == undefined)
        sParam = '';
 
-    fetch("http://messaging-loadbalancer-2023474556.us-west-2.elb.amazonaws.com:8080/message/stats?deviceName="+dParam+"&severity="+sParam,{
+    fetch("http://52.42.194.161:8080/message/stats?deviceName="+dParam+"&severity="+sParam,{
 	       headers:{
 			   authorization: this.state.accessToken
            }			   

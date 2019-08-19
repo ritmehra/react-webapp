@@ -22,7 +22,7 @@ function login(username, password) {
 		})
     };
 
-    return fetch('http://52.42.194.161:3306/login', requestOptions)
+    return fetch('http://Messaging-loadbalancer-2023474556.us-west-2.elb.amazonaws.com:3306/login', requestOptions)
         .then(function(response){
 			console.log("user fetched:"+JSON.stringify(response.headers));
 			

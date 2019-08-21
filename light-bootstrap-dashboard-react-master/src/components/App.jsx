@@ -18,7 +18,7 @@ class App extends React.Component {
     }
 	
 	componentDidMount() {
-		authenticationService.logout();
+		//authenticationService.logout();
         authenticationService.currentUser.subscribe(x => this.setState({ currentUser: x }));
     }
 

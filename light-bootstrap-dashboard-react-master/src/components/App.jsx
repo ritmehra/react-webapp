@@ -38,6 +38,7 @@ class App extends React.Component {
                             <div className="content">
                                 <div className="">
                                     <PrivateRoute exact path="/" component={AdminLayout} />
+									<PrivateRoute path="/admin" component={AdminLayout} />
                                     <Route path="/login" component={LoginPage} />
                                 </div>
                             </div>

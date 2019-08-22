@@ -46,7 +46,7 @@ class LoginPage extends Component {
                             .then(
                                 user => {
                                     const { from } = this.props.location.state || { from: { pathname: "/" } };
-                                    this.props.history.push(from);
+                                    this.props.history.push("/admin/dashboard");
                                 },
                                 error => {
                                     console.log("errror:"+error);                                }

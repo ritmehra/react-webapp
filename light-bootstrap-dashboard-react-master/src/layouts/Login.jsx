@@ -85,7 +85,7 @@ class LoginPage extends Component {
                       ncols={["col-md-3"]}
                       properties={[
                         {
-                          label: "Password",
+                          label: "Password New",
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Password",
